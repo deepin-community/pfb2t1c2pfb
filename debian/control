@@ -1,0 +1,16 @@
+Source: pfb2t1c2pfb
+Section: tex
+Priority: optional
+Maintainer: Hilmar Preuße <hille42@web.de>
+Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.16.1~)
+Standards-Version: 3.9.8
+
+Package: pfb2t1c2pfb
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: convert pfb into more compressible format and back
+ The package contains the two small tools pfb2t1c and t1c2pfb. pfb file
+ (PostScript Type1) can be converted into t1c and back without losing
+ information. The t1c files have the same size but are more compressible.
+ .
+ This feature is very useful when packaging PostScript Type1 fonts.

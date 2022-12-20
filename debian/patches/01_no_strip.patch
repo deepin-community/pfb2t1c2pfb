@@ -1,0 +1,24 @@
+From: Hilmar Preusse <hille42@web.de>
+Subject: don't strip files upon compiling
+
+
+--- ./pfb2t1c.c	2005-11-15 11:28:07.000000000 +0100
++++ ./pfb2t1c.c	2007-08-14 17:45:42.000000000 +0200
+@@ -1,6 +1,6 @@
+ #define DUMMY \
+ set -ex; \
+-gcc -DNDEBUG=1 -s -O3 -ansi -pedantic \
++gcc -DNDEBUG=1 -O3 -ansi -pedantic \
+   -Wall -W -Wstrict-prototypes -Wnested-externs -Winline \
+   -Wpointer-arith -Wbad-function-cast -Wcast-qual -Wmissing-prototypes \
+   -Wmissing-declarations "$0" -o pfb2t1c; \
+--- ./t1c2pfb.c	2005-11-15 11:28:28.000000000 +0100
++++ ./t1c2pfb.c	2007-08-14 17:45:49.000000000 +0200
+@@ -1,6 +1,6 @@
+ #define DUMMY \
+ set -ex; \
+-gcc -DNDEBUG=1 -s -O3 -ansi -pedantic \
++gcc -DNDEBUG=1 -O3 -ansi -pedantic \
+   -Wall -W -Wstrict-prototypes -Wnested-externs -Winline \
+   -Wpointer-arith -Wbad-function-cast -Wcast-qual -Wmissing-prototypes \
+   -Wmissing-declarations "$0" -o t1c2pfb; \

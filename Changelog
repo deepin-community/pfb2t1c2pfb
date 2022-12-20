@@ -1,0 +1,18 @@
+This is the changelog of the software package on http://alioth.debian.org/.
+The software itself never changed and got never a version.
+
+0.3
+---
+- copyright statement hopefully finally clarified (GPL), file COPYRIGHT
+  added (see readme.lic)
+- added the Changelog you're reading
+- man page of pfb2t1c added to package on alioth (t1c2pfb is documented
+  in there too)
+
+0.2
+---
+- the programs are public domain
+
+0.1
+---
+- first release without any copyright statement

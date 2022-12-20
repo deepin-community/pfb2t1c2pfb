@@ -1,0 +1,27 @@
+From: Helmut Grohne <helmut@subdivi.de>
+Subject: allow overriding the compiler via CC
+
+Index: pfb2t1c2pfb-0.3/pfb2t1c.c
+===================================================================
+--- pfb2t1c2pfb-0.3.orig/pfb2t1c.c
++++ pfb2t1c2pfb-0.3/pfb2t1c.c
+@@ -1,6 +1,6 @@
+ #define DUMMY \
+ set -ex; \
+-gcc -DNDEBUG=1 $CFLAGS $CPPFLAGS $LDFLAGS -O3 -ansi -pedantic \
++${CC:-gcc} -DNDEBUG=1 $CFLAGS $CPPFLAGS $LDFLAGS -O3 -ansi -pedantic \
+   -Wall -W -Wstrict-prototypes -Wnested-externs -Winline \
+   -Wpointer-arith -Wbad-function-cast -Wcast-qual -Wmissing-prototypes \
+   -Wmissing-declarations "$0" -o pfb2t1c; \
+Index: pfb2t1c2pfb-0.3/t1c2pfb.c
+===================================================================
+--- pfb2t1c2pfb-0.3.orig/t1c2pfb.c
++++ pfb2t1c2pfb-0.3/t1c2pfb.c
+@@ -1,6 +1,6 @@
+ #define DUMMY \
+ set -ex; \
+-gcc -DNDEBUG=1 $CFLAGS $CPPFLAGS $LDFLAGS -O3 -ansi -pedantic \
++${CC:-gcc} -DNDEBUG=1 $CFLAGS $CPPFLAGS $LDFLAGS -O3 -ansi -pedantic \
+   -Wall -W -Wstrict-prototypes -Wnested-externs -Winline \
+   -Wpointer-arith -Wbad-function-cast -Wcast-qual -Wmissing-prototypes \
+   -Wmissing-declarations "$0" -o t1c2pfb; \

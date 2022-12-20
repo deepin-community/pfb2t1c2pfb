@@ -1,0 +1,24 @@
+This package was debianized by Hilmar Preusse <hille42@web.de> on
+Fri, 30 Sep 2005 19:39:16 +0200.
+
+It was downloaded from http://alioth.debian.org/projects/pkg-pfb2t1c2pfb/
+
+Copyright 2003 Szabó Péter <pts@inf.bme.hu>
+
+License: GPL (see readme.lic(.asc) for a statement of the upstream author)
+
+pfb2t1c2pfb is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2, or (at your option)
+any later version.
+
+pfb2t1c2pfb is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+for more details.
+
+You should have received a copy of the GNU General Public License with
+your Debian GNU/Linux system, in /usr/share/common-licenses/GPL, or with
+the pfb2t1c2pfb source package provide by Debian as the file COPYING.  If
+not, write to the Free Software Foundation, Inc., 51 Franklin St,
+Fifth Floor, Boston, MA  02110-1301, USA.

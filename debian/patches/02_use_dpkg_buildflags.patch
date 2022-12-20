@@ -1,0 +1,28 @@
+Description: Use build flags from the environment (dpkg-buildflags).
+Author: Simon Ruderich <simon@ruderich.org>
+Last-Update: 2012-03-06
+
+Index: pfb2t1c2pfb-0.3/t1c2pfb.c
+===================================================================
+--- pfb2t1c2pfb-0.3.orig/t1c2pfb.c	2012-03-06 18:25:35.000000000 +0100
++++ pfb2t1c2pfb-0.3/t1c2pfb.c	2012-03-06 18:26:27.694179405 +0100
+@@ -1,6 +1,6 @@
+ #define DUMMY \
+ set -ex; \
+-gcc -DNDEBUG=1 -s -O3 -ansi -pedantic \
++gcc -DNDEBUG=1 $CFLAGS $CPPFLAGS $LDFLAGS -O3 -ansi -pedantic \
+   -Wall -W -Wstrict-prototypes -Wnested-externs -Winline \
+   -Wpointer-arith -Wbad-function-cast -Wcast-qual -Wmissing-prototypes \
+   -Wmissing-declarations "$0" -o t1c2pfb; \
+Index: pfb2t1c2pfb-0.3/pfb2t1c.c
+===================================================================
+--- pfb2t1c2pfb-0.3.orig/pfb2t1c.c	2012-03-06 18:25:35.000000000 +0100
++++ pfb2t1c2pfb-0.3/pfb2t1c.c	2012-03-06 18:26:27.694179405 +0100
+@@ -1,6 +1,6 @@
+ #define DUMMY \
+ set -ex; \
+-gcc -DNDEBUG=1 -s -O3 -ansi -pedantic \
++gcc -DNDEBUG=1 $CFLAGS $CPPFLAGS $LDFLAGS -O3 -ansi -pedantic \
+   -Wall -W -Wstrict-prototypes -Wnested-externs -Winline \
+   -Wpointer-arith -Wbad-function-cast -Wcast-qual -Wmissing-prototypes \
+   -Wmissing-declarations "$0" -o pfb2t1c; \

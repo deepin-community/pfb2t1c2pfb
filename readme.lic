@@ -1,0 +1,21 @@
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+
+> 1. There is no "Public Domain" in German Law. I don't know for
+> Austrian, but i guess it is the same.
+>
+> What to do about that? Would you mind to release the software under
+> GPL? No, I won't copy the whole wording into the headers of these
+> two little C files.
+>
+> 2. If you answer the question above positively (or choose another
+> license, which makes the package freely distributable according to
+> the DFSG[1]): Would you be so kind to sign the message digitally
+> using your GPG key? I guess
+> http://pgpkeys.pca.dfn.de:11371/pks/lookup?search=0x1B6EF74E&op=vindex
+> is yours. The sponsor said, that this step is not 100% necessary,
+> but would ease the job, as everybody can prove that the statement
+> was made by you.
+
+Yes, that's my GPG key.
+Sure, anybody can use pfb2t1c and t1c2pfb under the GPL.

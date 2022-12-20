@@ -1,0 +1,109 @@
+pfb2t1c2pfb (0.3-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:48:21 +0800
+
+pfb2t1c2pfb (0.3-11) unstable; urgency=medium
+
+  * Fix FTCBFS: Use a triplet-prefixed compiler. (Closes: #861342)
+    Thanks to Helmut Grohne <helmut@subdivi.de>.
+  * Standards-Version: 3.9.8, no changes needed.
+
+ -- Hilmar Preuße <hille42@web.de>  Thu, 27 Apr 2017 19:58:00 +0200
+
+pfb2t1c2pfb (0.3-10) unstable; urgency=low
+
+  * Patch by Péter Szabó for pfb2t1c (crash when invalid content
+    is processed) (Closes: #716508).
+  * Updated Standards-Version, no changes needed
+
+ -- Hilmar Preuße <hille42@web.de>  Mon, 15 Jul 2013 16:03:42 +0200
+
+pfb2t1c2pfb (0.3-9) unstable; urgency=low
+
+  * Enable hardening flags (thanks to Simon Ruderich for patch)
+    (Closes: #662827)
+
+ -- Hilmar Preuße <hille42@web.de>  Wed, 07 Mar 2012 10:02:58 +0100
+
+pfb2t1c2pfb (0.3-8) unstable; urgency=low
+
+  * Remove deprecated dpatch and upgrade to packaging format "3.0 quilt".
+  * Update to Standards-Version to 3.9.3 and debhelper to 9.
+
+    Thanks to Jari Aalto for the work.
+
+ -- Hilmar Preuße <hille42@web.de>  Wed, 29 Feb 2012 08:36:14 -0500
+
+pfb2t1c2pfb (0.3-7) unstable; urgency=low
+
+  * Fix some linitan warnings:
+    - debhelper-but-no-misc-depends
+    - ancient-standards-version
+    - patch-system-but-no-source-readme
+    - add build-arch and build-indep target in debian/rules
+
+ -- Hilmar Preuße <hille42@web.de>  Mon, 12 Sep 2011 16:14:43 +0200
+
+pfb2t1c2pfb (0.3-6) unstable; urgency=low
+
+  * fix package-uses-deprecated-debhelper-compat-version warning
+    from lintian
+
+ -- Hilmar Preuße <hille42@web.de>  Mon, 09 Mar 2009 16:31:58 +0100
+
+pfb2t1c2pfb (0.3-5) unstable; urgency=low
+
+  * don't apply patch from 0.3-4 unconditionally, leave the job
+    to dpatch
+  * bump standards version to 3.7.3, no changes necessary
+  * recode copyright to utf8
+
+ -- Hilmar Preuße <hille42@web.de>  Tue, 22 Apr 2008 14:52:35 +0200
+
+pfb2t1c2pfb (0.3-4) unstable; urgency=low
+
+  * don't call gcc with option -s to prevent unwanted stripping of
+    binaries (Closes: #437770)
+
+ -- Hilmar Preuße <hille42@web.de>  Tue, 14 Aug 2007 17:51:39 +0200
+
+pfb2t1c2pfb (0.3-3) unstable; urgency=low
+
+  * introduce the binary-indep target in debian/rules (Closes: #395767)
+  * Bumped Standards-Version 3.7.2.2, no changes needed.
+
+ -- Hilmar Preuße <hille42@web.de>  Mon, 11 Dec 2006 16:34:05 +0100
+
+pfb2t1c2pfb (0.3-2) unstable; urgency=low
+
+  * package is again lintian clean
+
+ -- Hilmar Preuße <hille42@web.de>  Mon, 23 Oct 2006 18:06:29 +0200
+
+pfb2t1c2pfb (0.3-1) unstable; urgency=low
+
+  * copyright statement finally clarified (GPL), see readme.lic(.asc)
+  * "upstream changelog" added
+  * package is lintian clean
+  * first upload into Debian (closes: #337315)
+
+ -- Hilmar Preuße <hille42@web.de>  Tue, 15 Nov 2005 14:07:54 +0100
+
+pfb2t1c2pfb (0.2-1) unstable; urgency=low
+
+  * No change in upstream functionality, just a statement that it
+    freeware and may be distributed and modified (with permission
+    from the author).
+  * Added man page by Norbert Preining
+  * Modified copyright file and description
+  * Tried to kill some lintian warnings
+
+ -- Hilmar Preuße <hille42@web.de>  Thu, 6 Oct 2005 15:08:26 +0200
+
+pfb2t1c2pfb (0.1-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Hilmar Preuße <hille42@web.de>  Fri, 30 Sep 2005 19:39:16 +0200
